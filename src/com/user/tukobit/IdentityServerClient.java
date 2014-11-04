@@ -58,7 +58,7 @@ public class IdentityServerClient {
 		System.setProperty("javax.net.ssl.trustStorePassword", "star123");
 
 		try {
-			configContext = ConfigurationContextFactory.createConfigurationContextFromFileSystem("repo", "repository/axis2/axis2_client.xml");
+			configContext = ConfigurationContextFactory.createConfigurationContextFromFileSystem( "repository/axis2/axis2_client.xml");
 			authstub = new AuthenticationAdminStub(configContext, SERVER_URL + "AuthenticationAdmin");
 
 			// Authenticates as a user having rights to add users.
